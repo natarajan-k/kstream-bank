@@ -1,0 +1,16 @@
+## Mandatory Section ##
+# Confluent Broker related properties
+#BOOTSTRAP_SERVERS_CONFIG = minimal-prod-kafka-bootstrap-es.mycluster-rajan09-992844b4e64c83c3dbd5e7b5e2da5328-0000.sng01.containers.appdomain.cloud:443
+BOOTSTRAP_SERVERS_CONFIG = minimal-prod-kafka-bootstrap.es.svc:9092
+#BOOTSTRAP_SERVERS_CONFIG = 172.21.97.244:9092
+#BOOTSTRAP_SERVERS_CONFIG = mycluster-rajan07-992844b4e64c83c3dbd5e7b5e2da5328-0000.jp-tok.containers.appdomain.cloud:32039
+APPLICATION_ID_CONFIG = bankbalance-application-2
+SECURITY_PROTOCOL_CONFIG = PLAINTEXT
+#SECURITY_PROTOCOL_CONFIG = SASL_SSL
+#SASL_MECHANISM_CONFIG = PLAIN
+SSL_TRUSTSTORE_LOCATION_CONFIG = ./es-cert.p12
+SSL_TRUSTSTORE_PASSWORD_CONFIG = muuJr3QFiiwa
+#SASL_JAAS_CONFIG_CONFIG = org.apache.kafka.common.security.scram.ScramLoginModule required username='rajan' password='CfKQZG9Cm7g5';
+#SASL_JAAS_CONFIG_CONFIG = org.apache.kafka.common.security.scram.ScramLoginModule required username='cp4iuser' password='Do0vIJuwnANZ';
+topic_in = bank-input
+topic_out = bank-output-2
