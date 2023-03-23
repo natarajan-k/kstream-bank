@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:11
 # copy the packaged jar file into our docker image
 COPY BankBalance_internal.jar /BankBalance.jar
 #COPY BankBalance.class /BankBalance.class
