@@ -1,6 +1,6 @@
 FROM openjdk:11
 # copy the packaged jar file into our docker image
-COPY BankBalance.jar /BankBalance.jar
+COPY BankBalance_external.jar /BankBalance.jar
 #COPY BankBalance.class /BankBalance.class
 COPY lib/*.jar /lib/
 COPY config.kafkastream.properties /config.kafkastream.properties
