@@ -3,7 +3,7 @@ FROM openjdk:11
 COPY BankBalance.jar /BankBalance.jar
 #COPY BankBalance.class /BankBalance.class
 COPY lib/*.jar /lib/
-COPY config.kafkastream.properties /config.kafkastream.properties
+COPY config.kafkastream.properties.2 /config.kafkastream.properties
 COPY log4j.properties /log4j.properties
 COPY file1.txt /file1.txt
 COPY es-cert.p12 /es-cert.p12
